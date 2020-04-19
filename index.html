@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"> -->
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <title>Survey Form</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <h1 id="title" class="center-text">
+                    Survey Form
+                </h1>
+                <p id="description" class="center-text">
+                    Thank you for taking the time to help us provide a better service
+                </p>
+            </header>
+            <form action="#" id="survey-form">
+                <div class="form-items">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required placeholder="Enter your name" class="form-item invalid">
+                </div>
+                <div class="form-items">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="Enter your email" class="form-item invalid">
+                </div>
+                <div class="form-items">
+                    <label for="age">Age
+                        <span class="option">(optional)</span>
+                    </label>
+                    <input type="number" name="age" id="age" required placeholder="Age" class="form-item" min="13" max="75">
+                </div>
+                <div class="form-items">
+                    <p>Which option best describes your current role?</p>
+                    <select name="role" id="dropdown" class="form-item invalid" required>
+                        <option value="" selected="" disabled="">Your current role</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="no">Prefer not to sya</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-items">
+                    <p>Would you recommend our service to a friend?</p>
+                    <label >
+                        <input type="radio" name="user-recomment" class="input-radio" value="for_sure" checked>
+                        For Sure
+                    </label>
+                    <label >
+                        <input type="radio" name="user-recomment" class="input-radio" value="maybe" >
+                        Maybe
+                    </label>
+                    <label >
+                        <input type="radio" name="user-recomment" class="input-radio" value="not_sure" >
+                        Not Sure
+                    </label>
+                </div>
+                <div class="form-items">
+                    <p>What do you like the most of our services</p>
+                    <select name="most_like" id="most_like" class="form-item invalid" required>
+                        <option value="" selected disabled="">Select an option</option>
+                        <option value="community">Community</option>
+                        <option value="service">Customer service</option>
+                        <option value="updates">Our updates</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-items">
+                    <p>
+                        What would you like to see improved?
+                        <span class="option">(Check all that apply)</span>
+                        </p>
+                        <label>
+                            <input name="prefer"  value="service" type="checkbox" class="input-checkbox">Customer service</label>
+                        <label>
+                            <input name="prefer"  value="platform" type="checkbox" class="input-checkbox">Platform</label>
+                        <label>
+                            <input name="prefer"  value="everything" type="checkbox" class="input-checkbox">Everything</label>
+                        <label>
+                            <input name="prefer"  value="updates" type="checkbox" class="input-checkbox">Updates</label>
+                </div>
+                <div class="form-items">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="form-items">
+                    <button id="submit" class="btn" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
